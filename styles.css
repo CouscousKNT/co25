@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Akkurat Trial TT";
+}
+
+@font-face {
+  font-family: "Fujiwara A Bold";
+  src: url("./fonts/Fujiwara A Bold.ttf") format("opentype");
+  font-weight: 700;
+}
+
+html,
+.pitch {
+  width: 100vw;
+  height: 200vh;
+  background-color: #111111;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 22vh;
+  font-weight: 400;
+  line-height: 0.85;
+  font-family: 'Fujiwara A Bold';
+  padding-top: 5vh;
+}
+
+a,
+p {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 0.9;
+}
+
+p span {
+  font-family: "Gascogne Serial";
+}
+
+.model {
+  position: sticky;
+  height: 5vh;
+  top: 0;
+}
+
+.container {
+  height: 100vh;
+  position: absolute;
+  z-index: 10;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-transform: uppercase;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+}
+
+.header-row {
+  display: flex;
+  gap: 12em;
+  align-items: center;
+}
+.header-row-dr {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12em;
+  align-items: center;
+}
+
+.header-row p {
+  text-transform: uppercase;
+  width: 20%;
+}
+
+
+.outro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6em 2em 2em 2em;
+}
+
+.outro-copy h2 {
+  width: 75%;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+
+.outro-copy h2 .line {
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  overflow: hidden;
+  display: block;
+}
+
+.outro-copy h2 .line span {
+  position: relative;
+  will-change: transform;
+  display: block;
+  transform: translateY(70px);
+}
+
+.outro-copy p {
+  display: flex;
+  margin: 1em 0;
+  gap: 2em;
+  text-transform: uppercase;
+}
+
+.outro-copy p span {
+  font-family: "Akkurat Trial TT";
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-transform: uppercase;
+}
+
+.footer p:nth-child(1) {
+  width: 25%;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: clip;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
